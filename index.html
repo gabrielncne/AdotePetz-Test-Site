@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote Petz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Adote Petz<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#inicio" onclick="toggleMenu();">Início</a></li>
+            <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Quero Adotar</a></li>
+            <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="inicio">
+        <div class="content">
+          <h2 class="titleText">Adote Petz</h2>
+          <p> Amor não se compra, amor se conquista. Um amor sincero e sem interesses, 
+              daquele que foi tirado do sofrimento pelas suas mãos. Um amor incondicional e sem limites, que só aquele que adotou é capaz de perceber..</p>
+          <a href= "#menu" class="btn"> Quero adotar </a>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="row">
+          <div class="col150">
+            <h2 class="titleText"><span>S</span>obre</h2>
+              <p>Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de mais de 104 ONGs e protetores parceiros. Funciona assim: a Petz disponibiliza espaços especialmente 
+                dedicados para a adoção no centro de suas lojas e as ONGs/protetores parceiros ficam responsáveis pelo processo e entrevista com os potenciais adotantes. 
+                Juntos somos mais fortes!
+                <br><br> Adote Petz é um programa criado para estreitar laços entre pessoas que têm o sonho de adotar um pet e nossas ONGs 
+                e protetores parceiros. Vamos juntos incentivar a adoção, conscientizar sobre a posse responsável e fomentar a cultura de doação em prol do bem-estar animal.</p>
+        </div>
+        <div class="col150">
+            <div class="imgBx">
+                <img src="images/sobrenos.jpg">
+            </div>
+         </div>
+       </div>
+      </section>
+
+    <section class="menu" id="menu">
+       <div class="title">
+          <h2 class="titleText"><span>E</span>ncontre seu mais novo <span>A</span>umigo</h2>
+          <p>Por favor adote com responsabilidade.</p>
+        </div>
+        
+        <div class="content">
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/2.png">
+            </div>
+            <div class="text">
+              <h3>Bob</h3>
+              <p> Boxer (3 meses)</p>
+              <p> Petz Marginal Tiete, SAO PAULO, SP </p>
+              </div>
+            </div>
+            <div class="box">
+            <div class="imgBx">
+              <img src="images/3.png">
+            </div>
+            <div class="text">
+              <h3>Anne</h3>
+              <p>Yorkshire (2 anos)</p>
+              <p> Petz Extra Maracanã, RIO DE JANEIRO, RJ </p>
+              </div>
+            </div>
+             <div class="box">
+            <div class="imgBx">
+              <img src="images/4.png">
+            </div>
+            <div class="text">
+              <h3> Billy </h3>
+              <p> Bichon havanês (1 ano) </p>
+              <p> Petz Canoas, CANOAS, RS </p>
+              </div>
+            </div>
+             <div class="box">
+            <div class="imgBx">
+              <img src="images/5.png">
+            </div>
+            <div class="text">
+              <h3>Jack</h3>
+              <p> Dalmata (3 meses)</p>
+              <p> Petz Brasília SIA, BRASILIA, DF </p>
+              </div>
+            </div>
+             <div class="box">
+            <div class="imgBx">
+              <img src="images/6.png">
+            </div>
+            <div class="text">
+              <h3>Amora</h3>
+              <p>Border Collie (1 ano)</p>
+              <p> Petz Marginal Tiete, SAO PAULO, SP </p>
+              </div>
+            </div>
+             <div class="box">
+            <div class="imgBx">
+              <img src="images/1.png">
+            </div>
+            <div class="text">
+              <h3>Hulk</h3>
+              <p>Golden Retriver (2 anos)</p>
+              <p> Petz Jaguaré, SAO PAULO, SP </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="title">
+          <a href="#" class="btn">Inicio</a>
+        </div>
+      </section> 
+      <section class="contato" id="contato">
+        <div class="title">
+          <h2 class="titleText"><span>C</span>ontate nos</h2>
+          <p>Se você deseja nos contatar, deixe sua mensagem no campo ao lado.</p>
+        </div>
+        <div class="formadecontato">
+          <h3>Envie sua uma mensagem </h3>
+          <div class="inputBox">
+            <input type="text" placeholder="Nome">
+          </div>
+          <div class="inputBox">
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="inputBox">
+            <textarea type="text" placeholder="Mensagem"></textarea>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Send">
+          </div>
+        </div>
+      </section>
+      
+      <div class="copyrightText">
+        <p>Copyright 2022 <a href ="https://www.instagram.com/gabrielncne/">
+        Gabriel Negreiros Coradine Design </a>. All Right Reserved</p>
+      </div>
+      
+      <script type="text/javascript">
+          window.addEventListener('scroll', function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+          });
+
+          function toggleMenu(){
+            const menuToggle = document.querySelector ('.menuToggle');
+            const navigation = document.querySelector ('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+          }
+      </script>
+</body> 
+</html>
